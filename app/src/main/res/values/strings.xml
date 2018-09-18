@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">E-Takwira</string>
+    <string name="minimum_password">Langueur minimum est 6 caractères</string>
+    <string name="auth_failed">Authentification a echoué</string>
+
+
+</resources>

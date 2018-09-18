@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/bar"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:background="@color/colorPrimary">
+            <ImageButton
+                android:id="@+id/back"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/arrow"
+                android:background="@null"
+                />
+            <TextView
+                android:id="@+id/namestade"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:text="Terrain"
+                android:textColor="#ffffff"
+                android:textSize="20dp"
+                android:layout_marginLeft="56dp"
+                />
+            <ImageButton
+                android:id="@+id/search1"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:src="@drawable/search_icone"
+                android:background="@null"
+                android:layout_gravity="right"
+                />
+
+        </android.support.v7.widget.Toolbar>
+    </RelativeLayout>
+</android.support.constraint.ConstraintLayout>

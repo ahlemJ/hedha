@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+<RelativeLayout
+    android:id="@+id/auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#ffffff">
+    <AutoCompleteTextView
+        android:id="@+id/autoCompleteTextView1"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:background="@color/colorPrimary"
+        android:paddingLeft="48dp"
+
+        android:hint="Recherchez un terrain"
+        />
+
+    <ImageButton
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:src="@drawable/search_icone"
+        android:layout_alignRight="@id/autoCompleteTextView1"
+        android:layout_centerInParent="true"
+        android:background="@null"/>
+    <ImageButton
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:src="@drawable/arrow"
+        android:background="@null"
+        android:layout_alignLeft="@id/autoCompleteTextView1"
+        android:layout_centerInParent="true"/>
+</RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/layout_top"
+        android:layout_width="match_parent"
+        android:layout_height="164dp"
+        android:layout_below="@+id/auto"
+        android:background="@drawable/stade">
+
+        <FrameLayout
+            android:id="@+id/frame"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            >
+
+            <com.example.ahlem.myapplication1._sliders.SliderView
+                android:id="@+id/sliderView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+        </FrameLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentTop="true"
+            android:background="@drawable/bg_indicator" />
+
+        <LinearLayout
+            android:id="@+id/pagesContainer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_gravity="bottom"
+            android:layout_marginBottom="8dp"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal" />
+
+    </RelativeLayout>
+<TextView
+    android:id="@+id/title"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="56dp"
+    android:text="Terrain"
+    android:textSize="40dp"
+    android:textColor="@color/colorPrimaryDark"
+    android:layout_below="@+id/layout_top"/>
+    <RelativeLayout
+    android:id="@+id/text"
+    android:layout_width="match_parent"
+    android:layout_height="60dp"
+        android:layout_below="@+id/title"
+    android:layout_marginTop="8dp"
+    android:layout_marginLeft="8dp"
+    android:layout_marginRight="8dp"
+    android:background="#F2ECEC">
+
+    <ImageView
+        android:id="@+id/loc"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginLeft="8dp"
+        android:src="@drawable/localisation"
+
+
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="56dp"
+        android:layout_marginTop="12dp"
+        android:text="Ben Arous Mornag "
+        android:textSize="20dp"
+        android:layout_marginLeft="56dp"
+        android:layout_alignParentLeft="true" />
+
+</RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/butt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@+id/text"
+        android:layout_centerInParent="true"
+        android:paddingTop="20dp">
+
+        <Button
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:background="@drawable/circle_button"
+            android:drawableTop="@drawable/cup"
+            android:paddingTop="20dp"
+            android:textColor="#fff" />
+
+        <Button
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/circle_button"
+            android:drawableTop="@drawable/stadium"
+            android:paddingTop="20dp"
+            android:textColor="#fff" />
+
+        <Button
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/circle_button"
+            android:drawableTop="@drawable/ic_directions_run_black_24dp"
+            android:paddingTop="20dp"
+            android:textColor="#fff" />
+        <Button
+            android:id="@+id/reser"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/circle_button"
+            android:drawableTop="@drawable/calendar"
+            android:paddingTop="20dp"
+            android:textColor="#fff" />
+    </LinearLayout>
+<LinearLayout
+    android:id="@+id/lin"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_below="@+id/butt"
+    android:paddingTop="5dp"
+    >
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Evenement"
+        android:paddingLeft="21dp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Paticipez"
+        android:paddingLeft="20dp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Ajoutez moi !"
+        android:paddingLeft="22dp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Réservez"
+        android:paddingLeft="22dp"/>
+</LinearLayout>
+    <ImageButton
+        android:layout_width="90dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/lin"
+
+        android:background="@android:color/transparent"
+        />
+</RelativeLayout>
+</android.support.constraint.ConstraintLayout>

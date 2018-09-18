@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <android.support.v7.widget.AppCompatAutoCompleteTextView
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:id="@+id/autoCompleteTextView1"
+        android:background="@color/colorPrimary"
+        android:hint="Cherchez un terrain"
+        android:textAlignment="center"
+        />
+
+    <ImageButton
+        android:id="@+id/back"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:background="@android:color/transparent"
+        android:layout_marginStart="13dp"
+        android:layout_marginTop="14dp"
+        android:src="@drawable/arrow"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="13dp"
+        />
+
+
+    <ImageButton
+      android:id="@+id/search1"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:src="@drawable/search_icone"
+        android:background="@null"
+        android:layout_alignParentRight="true"/>
+
+    <RelativeLayout
+        android:id="@+id/layout_top"
+        android:layout_width="match_parent"
+        android:layout_height="164dp"
+        android:layout_below="@+id/autoCompleteTextView1">
+
+        <FrameLayout
+            android:id="@+id/frame"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            >
+
+            <com.example.ahlem.myapplication1._sliders.SliderView
+                android:id="@+id/sliderView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+        </FrameLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentTop="true"
+            android:background="@drawable/bg_indicator" />
+
+        <LinearLayout
+            android:id="@+id/pagesContainer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_gravity="bottom"
+            android:layout_marginBottom="8dp"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:id="@+id/text"
+        android:orientation="vertical"
+        android:divider="?android:dividerHorizontal"
+        android:showDividers="beginning"
+        android:layout_below="@+id/layout_top"
+
+        >
+<TextView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_centerHorizontal="true"
+    android:text="Terrain"
+    android:id="@+id/namestade"
+    android:textSize="20dp"
+    android:textColor="#fff"
+    android:textAlignment="center"
+
+    android:background="@color/colorPrimaryDark"/>
+    <TextView
+        android:id="@+id/localisation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="localisation"
+        android:layout_below="@id/namestade"
+        android:textAlignment="center"
+        android:textColor="#fff"
+        android:background="@color/colorPrimaryDark"
+        />
+    </LinearLayout>
+    <View
+        android:id="@+id/view"
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:background="#fff"
+        android:layout_below="@+id/text"/>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="#fff"
+       android:layout_below="@+id/view"
+
+        >
+
+        <LinearLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:paddingTop="16dp">
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+
+    android:orientation="horizontal">
+            <Button
+                android:id="@+id/reserve"
+                android:layout_width="140dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/shape"
+                android:textAlignment="center"
+                android:text="Réservez"
+                android:textSize="14dp"
+                android:textColor="#fff"
+                />
+
+    <Button
+        android:id="@+id/list"
+        android:layout_width="140dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/shape"
+        android:paddingLeft="32dp"
+        android:paddingTop="5dp"
+        android:text="Rejoindre liste"
+        android:textAlignment="viewStart"
+        android:textColor="#fff"
+        android:layout_alignParentRight="true"
+
+        android:gravity="start" />
+
+</RelativeLayout>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingTop="16dp">
+            <Button
+                android:id="@+id/suppRes"
+                android:layout_width="140dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_gravity="center"
+                android:textSize="14dp"
+                android:background="@drawable/shape"
+                android:text="Evenements"
+                android:textColor="#fff" />
+                <Button
+                    android:layout_width="140dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentTop="true"
+                    android:background="@drawable/shape"
+                    android:paddingLeft="8dp"
+                    android:paddingTop="10dp"
+                    android:textSize="14dp"
+                    android:text="Rejoindre liste"
+                    android:textAlignment="viewStart"
+                    android:textColor="#fff"
+                    android:layout_alignParentRight="true"
+                    android:gravity="start"/>
+            </RelativeLayout>
+            <Button
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:layout_marginTop="16dp"
+                android:layout_gravity="center"
+                android:background="@drawable/circle_button"
+                android:drawableTop="@drawable/cle"
+                android:paddingTop="20dp"
+                android:text="X-X-X"
+                android:textSize="14dp"
+                android:textColor="@color/colorPrimary" />
+        </LinearLayout>
+    </ScrollView>
+
+
+</RelativeLayout>

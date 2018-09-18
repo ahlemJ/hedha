@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.ahlem.myapplication1">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".MainActivity">
+
+        </activity>
+
+        <activity android:name=".FirstActivity">
+
+        </activity>
+        <activity android:name=".StadeProfile">
+
+        </activity>
+        <activity android:name=".Welcom">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+
+        </activity>
+        <activity android:name=".Calendrierr">
+
+        </activity>
+        <activity android:name=".Reservation">
+
+    </activity>
+        <activity android:name=".AnnulerReservation">
+
+        </activity>
+
+        <activity android:name=".Test">
+
+        </activity>
+
+        <activity android:name=".Evenement">
+
+        </activity>
+        <activity android:name=".ListIndiv">
+
+        </activity>
+        <activity android:name=".MesReservation">
+
+        </activity>
+        <activity android:name=".Feedback">
+
+        </activity>
+        <activity android:name=".Parametre">
+
+        </activity>
+        <activity android:name=".Login">
+
+        </activity>
+        <activity android:name=".SignUpActivity">
+
+        </activity>
+        <activity android:name=".MotDePass">
+
+        </activity>
+        <activity android:name=".InfoEdit">
+
+        </activity>
+        <activity android:name=".Notifications">
+
+        </activity>
+    </application>
+    <uses-permission android:name="android.permission.REORDER_TASKS"/>
+</manifest>
