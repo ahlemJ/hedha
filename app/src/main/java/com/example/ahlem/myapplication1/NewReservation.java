@@ -8,6 +8,7 @@ public class NewReservation {
     private  String etat;
     private  String id;
     //private  String id;
+    private  String key;
     private String profilephoto;
 
 

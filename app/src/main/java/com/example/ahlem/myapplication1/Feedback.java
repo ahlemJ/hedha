@@ -67,7 +67,7 @@ String id, userID,photoUrl;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.feedback);
+        setContentView(R.layout.addpublication);
         setRequestedOrientation (ActivityInfo.SCREEN_ORIENTATION_PORTRAIT);
         back = (ImageView) findViewById(R.id.back10);
         addph = (Button) findViewById(R.id.addph);
@@ -150,6 +150,7 @@ String id, userID,photoUrl;
                   publicat.setLastname(FirstActivity.lastname);
                   publicat.setName(FirstActivity.name);
                   publicat.setPhotoProfile(photoUrl);
+                  publicat.setKey(FirstActivity.user.getId());
                   myRef.child(id).child("feedback").push().setValue(publicat);
                       Toast.makeText(Feedback.this,publicat.toString() , Toast.LENGTH_LONG).show();
 

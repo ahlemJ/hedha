@@ -52,7 +52,8 @@ public class ReservationAdapter extends ArrayAdapter<NewReservation> {
         // Populate the data into the template view using the data object
        temps.setText(user.getDate());
        dateDereservation.setText(user.getHeure());
-       key= user.getId();
+      // key= user.getId();
+        key=MesReservation.reservationId.get(position);
      //  key1= user.getId();
 
         annuler.setOnClickListener(new View.OnClickListener() {

@@ -244,7 +244,8 @@ ArrayList<NewReservation> reservations;
                     // StadeModel stadeModel = data.getValue(StadeModel.class);
 
                     reservation = data.getValue(NewReservation.class);
-                   reservationId.add(data.getKey());
+                   reservationId.add(data.child("key").getValue().toString());
+                   //reservationId.add(data.getKey());
                     //addReservation(reservation);
                    reservations.add(reservation);
 
